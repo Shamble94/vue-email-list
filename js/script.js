@@ -17,7 +17,11 @@ createApp({
                     this.email_list.push(result.data.response);
                 
                 });
+                /* COSI FACENDO AD OGNI CLICK GENERO UNA LISTA NUOVA */
+                this.email_list = []
             }
+            
         }
+        
     },
 }).mount(`#app`);

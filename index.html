@@ -10,13 +10,13 @@
     <div id="app">
         <div class="container">
             <!-- BOTTONE CHE RICHIAMA LA FUNZIONE -->
-            <button class="btn btn-success m-2" @click="generateMail()">
+            <button class="btn btn-success m-2" @click="generateMail">
                 genera lista
               </button>
             <h1 class ="m-2">Lista Email</h1>
             <!-- LISTA CONTENENTE LE 10 EMAIL -->
             <ul>
-                <li v-for="email in email_list">{{ email }} </li>
+                <li v-show="email_list.length==10" v-for="email in email_list">{{ email }} </li>
             </ul>
             
         </div>
